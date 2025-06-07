@@ -422,43 +422,9 @@ I love turning ideas into reality through code. Whether it's designing sleek use
     <script src="script.js"></script>
     <script type="module">
   // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.0/firebase-app.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyB-xMlAd2eSAJlYIyYkTmDwPIj6X09hB8s",
-    authDomain: "contactformproject-portfolio1.firebaseapp.com",
-    databaseURL: "https://contactformproject-portfolio1-default-rtdb.firebaseio.com",
-    projectId: "contactformproject-portfolio1",
-    storageBucket: "contactformproject-portfolio1.firebasestorage.app",
-    messagingSenderId: "948512778322",
-    appId: "1:948512778322:web:71f1ce4ad80144eb5fd78b"
-  };
-
+  
   // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-</script>
-<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js"></script>
-<script>
-  const db = firebase.firestore();
-
-  document.getElementById("contactForm").addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    db.collection("contacts").add({
-      name: document.getElementById("name").value,
-      email: document.getElementById("email").value,
-      message: document.getElementById("message").value,
-      timestamp: new Date()
-    }).then(() => {
-      alert("Message sent successfully!");
-      document.getElementById("contactForm").reset();
-    }).catch(error => {
-      alert("Error: " + error.message);
-    });
-  });
+  
 </script>
 
 
